@@ -71,7 +71,7 @@ export const AIChat = () => {
 • Most popular make: ${Object.entries(analytics.makeStats).sort(([,a], [,b]) => b - a)[0][0]}
 • Average range: ${analytics.avgRange} miles
 • BEV vs PHEV: ${Math.round(analytics.bevCount/analytics.totalVehicles*100)}% are BEVs
-• Top county: ${Object.entries(analytics.countyStats).sort(([,a], [,b]) => b - a)[0][0]} County
+• Top country: ${Object.entries(analytics.countyStats).sort(([,a], [,b]) => b - a)[0][0]} County
 
 Feel free to ask more specific questions!`;
   };
