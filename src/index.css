@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* EV Dashboard Design System - Electric & Modern Theme */
+
+@layer base {
+  :root {
+    /* Core electric theme colors */
+    --background: 220 15% 7%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 20% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 20% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Electric blue primary */
+    --primary: 198 100% 65%;
+    --primary-foreground: 220 15% 7%;
+
+    /* Electric green secondary */
+    --secondary: 142 76% 36%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 210 20% 65%;
+
+    /* Electric cyan accent */
+    --accent: 180 100% 70%;
+    --accent-foreground: 220 15% 7%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 15%;
+    --ring: 198 100% 65%;
+
+    /* Custom EV dashboard colors */
+    --electric-blue: 198 100% 65%;
+    --electric-green: 142 76% 36%;
+    --electric-cyan: 180 100% 70%;
+    --electric-purple: 260 80% 65%;
+    --tesla-red: 0 85% 55%;
+    --warning-amber: 45 95% 55%;
+
+    /* Gradients */
+    --gradient-electric: linear-gradient(135deg, hsl(var(--electric-blue)), hsl(var(--electric-cyan)));
+    --gradient-energy: linear-gradient(135deg, hsl(var(--electric-green)), hsl(var(--electric-blue)));
+    --gradient-bg: linear-gradient(135deg, hsl(220 15% 7%), hsl(220 20% 10%));
+
+    /* Shadows & Effects */
+    --shadow-electric: 0 0 30px hsl(var(--electric-blue) / 0.3);
+    --shadow-glow: 0 0 20px hsl(var(--accent) / 0.2);
+    --shadow-card: 0 8px 32px hsl(220 20% 5% / 0.8);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 220 20% 10%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 198 100% 65%;
+    --sidebar-primary-foreground: 220 15% 7%;
+    --sidebar-accent: 220 20% 15%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 220 20% 20%;
+    --sidebar-ring: 198 100% 65%;
+  }
+}
+
+/* Base styles */
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
