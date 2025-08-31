@@ -84,9 +84,9 @@ export const EVDashboard = () => {
             trend={{ value: 12, isPositive: true }}
           />
           <StatsCard
-            title="Top Counties"
+            title="Top Countries"
             value={Object.keys(analytics.countyStats).length}
-            description="Counties with EV registrations"
+            description="Counrties with EV registrations"
             icon={MapPin}
             trend={{ value: 8, isPositive: true }}
           />
@@ -110,7 +110,7 @@ export const EVDashboard = () => {
             type="line"
           />
           <EVChart
-            title="Top Counties by EV Count"
+            title="Top Countries by EV Count"
             data={countyData}
             type="bar"
           />
